@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400;700&display=swap');
+
+body
+{
+    background-color:#000000 !important;
+    color: #FFFFFF !important;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    font-family: 'Orbitron', sans-serif;
+    color: #30FF14 !important;
+
+}
+
+.precio-gamer
+{
+    color:#30FF14 !important;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
