@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión | Level-Up Gamer</title>
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-black text-white">
+    
+<header>
+        <a href="index.html" class="navbar-brand text-white text-decoration-none">
+        <h1 class="text-center"  >LEVEL-UP GAMER</h1>
+        </a>
+        <nav class="navbar navbar-dark bg-dark mb-4  mb-5 py-3">
+            <div class="container">
+                <div>
+                    <a class="navbar-brand" href="index.html">Inicio</a>
+                    <a class="navbar-brand" href="products.html">Catálogo</a>
+                    <a class="navbar-brand" href="index.html#comunidad">Blog y Comunidad</a>
+                    <a class="navbar-brand " href="cart.html">Carrito</a>
+                    <a class="navbar-brand fw-bold" href="login.html">Iniciar Sesión</a>
+                    <a class="navbar-brand" href="register.html">Registrarse</a>
+                <a href="contact.html" class="btn fw-bold" style="background-color: transparent; border: 2px solid #39FF14; color: #39FF14;">
+                        Contáctanos / Soporte
+                </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<main class="container py-5 flex-grow-1">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-5">
+                
+            <h2 class="text-center mb-4" style="color: #1E90FF;">Iniciar Sesión</h2>
+                
+            <div class="card p-4 bg-dark text-white border border-secondary shadow">
+                <form id="formLogin">
+                    <div class="mb-3">
+                        <label for="correoLogin" class="form-label">Correo Electrónico</label>
+                        <input type="email" id="correoLogin" class="form-control" placeholder="usuario@gmail.com" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="passwordLogin" class="form-label">Contraseña</label>
+                        <input type="password" id="passwordLogin" class="form-control" placeholder="********" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100 fw-bold py-2">Entrar</button>
+                        
+                    <p id="errorLogin" class="text-center mt-3 mb-0 fw-bold"></p>
+                </form>
+            </div>
+                
+        </div>
+    </div>
+</main>
+
+<footer class="text-center py-4 mt-auto border-top border-secondary">
+    <p class="text-secondary small mb-0">© 2026 Level-Up Gamer. Equipo: Brayan y Angelo.</p>
+</footer>
+
+    <script src="assets/js/login.js"></script>
+</body>
+</html>
