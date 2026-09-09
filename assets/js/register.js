@@ -3,10 +3,12 @@
  const formulario = document.getElementById("formRegistro");
  if(formulario){
     formulario.addEventListener("submit", function(e){
+    e.preventDefault();
         const nombre= document.getElementById("nombre").value.trim();
         const rut= document.getElementById("rut").value.trim();
         const correo= document.getElementById("correo").value.trim();
         const edadStr= document.getElementById("edad").value.trim();
+        const edad = parseInt(edadStr);
         const mensajeSistema = document.getElementById("errorRegistro");
 
         mensajeSistema.className= "mt-3 text-center fw-bold";
