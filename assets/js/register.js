@@ -46,8 +46,9 @@
         {
         mensajeSistema.textContent = "Registro exitoso! Conseguiste 400 coins de la tienda";
         mensajeSistema.style.color = "#39FF14"; 
+        }
 
-        formulario.reset();}
+        formulario.reset();
 
 
 
