@@ -5,7 +5,7 @@
     formulario.addEventListener("submit", function(e){
     e.preventDefault();
         const nombre= document.getElementById("nombre").value.trim();
-        const rut= document.getElementById("rut").value.trim();
+        const password= document.getElementById("password").value.trim();
         const correo= document.getElementById("correo").value.trim();
         const edadStr= document.getElementById("edad").value.trim();
         const edad = parseInt(edadStr);
@@ -14,11 +14,17 @@
         mensajeSistema.className= "mt-3 text-center fw-bold";
         mensajeSistema.style.color = "";
         
-        if (nombre === "" || rut === "" || correo === "" || edadStr === ""){
+        if (nombre === "" || password === "" || correo === "" || edadStr === ""){
                 mensajeSistema.textContent = "Error: Debes ingresar tu nombre, RUT, correo y edad";
                 mensajeSistema.classList.add("text-danger");
                 return;
             }
+        if (password.length < 6){
+            mensajeSistema.textContent ="Error: La contraseña debe tener al menos 6 caracteres";
+            mensajeSistema.classList.add("text-danger");
+            return;
+        }
+                
 
         if (!correo.includes("@")){
                 mensajeSistema.textContent = "Error: Debes ingresar un correo valido (debe contener @)";
@@ -34,7 +40,7 @@
         
        if (correo.includes("@duocuc.cl")) {
              mensajeSistema.textContent = "Formulario correcto. ¡Tienes 20% de descuento!";
-                mensajeSistema.style.color = "#39FF14"; // Aplicamos tu verde eléctrico
+                mensajeSistema.style.color = "#39FF14";
         }
         else
         {
