@@ -14,7 +14,7 @@ if (btnEnviar && formContact) {
         const mensaje = document.getElementById("mensajeContacto").value.trim();
         const mensajeError = document.getElementById("errorContactoNuevo");
 
-    mensajeError.className = "text-center mt-3 mb-0 fw-bold text-danger";
+    mensajeError.className = "text-center mt-3 mb-0 fw-bold";
     mensajeError.style.color = "#ff4d4d";
 
     if (nombre === "" || correo === "" || telefono === "" || mensaje === "") {
