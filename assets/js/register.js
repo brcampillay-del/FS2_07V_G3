@@ -15,7 +15,7 @@
         mensajeSistema.style.color = "";
         
         if (nombre === "" || password === "" || correo === "" || edadStr === ""){
-                mensajeSistema.textContent = "Error: Debes ingresar tu nombre, RUT, correo y edad";
+                mensajeSistema.textContent = "Error: Debes ingresar tu nombre, password, correo y edad";
                 mensajeSistema.classList.add("text-danger");
                 return;
             }
