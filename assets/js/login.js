@@ -9,14 +9,16 @@ document.addEventListener("DOMContentLoaded", function() {
         const password = document.getElementById("passwordLogin").value.trim();
         const errorP = document.getElementById("errorLogin");
 
-        errorP.className = "text-danger text-center mt-3 fw-bold";
+        errorP.className = "text-center mt-3 fw-bold";
         errorP.style.color = "";
 
         if(correo === ""){
+            errorP.style.color = "#ff1414";
             errorP.textContent = "Error: Debe ingresar un correo.";
             return;
         }
         if(password === ""){
+            errorP.style.color = "#ff1414";
             errorP.textContent = "Error: Debe ingresar una contraseña.";
             return;
         }
@@ -30,11 +32,20 @@ document.addEventListener("DOMContentLoaded", function() {
             }, 800);
             return; 
         }
+         if(correo === "admin@duocuc.cl" && password != "admin123"){
+            errorP.style.color = "#ff1414";
+            errorP.textContent = "Error: Contraseña invalida.";
+            return;
+             
+         
+        }
+        
 
             
         const esCorreoValido = correo.includes("@") && (correo.endsWith(".com") || correo.endsWith(".cl"));
             
         if (!esCorreoValido) {
+            errorP.style.color = "#ff1414";
             errorP.textContent = "Error: Debe seleccionar un correo válido.";
             return;
         }
