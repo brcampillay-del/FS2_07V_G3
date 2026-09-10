@@ -32,10 +32,16 @@
                 return;
             }
         
+       if (correo.includes("@duocuc.cl")) {
+             mensajeSistema.textContent = "Formulario correcto. ¡Tienes 20% de descuento!";
+                mensajeSistema.style.color = "#39FF14"; // Aplicamos tu verde eléctrico
+        }
+        else
+        {
         mensajeSistema.textContent = "Registro exitoso! Conseguiste 400 coins de la tienda";
         mensajeSistema.style.color = "#39FF14"; 
 
-        formulario.reset();
+        formulario.reset();}
 
 
 
